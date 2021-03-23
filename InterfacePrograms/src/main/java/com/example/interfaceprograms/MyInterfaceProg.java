@@ -20,21 +20,13 @@ public class MyInterfaceProg {
 
 
 
-
-    private static double average(BankAccount[] objects) {
+    private static double average(Measurable[] objects) {
         if(objects.length ==0) {return 0;}
         double sum = 0;
-        for(BankAccount obj : objects){
-            sum = sum+ obj.getBalance();
+        for(Measurable obj : objects){
+            sum = sum+ obj.getMeasure();
         }
         return sum/ objects.length;
     }
-    private static double average(Country[] countries) {
-        if(countries.length ==0) {return 0;}
-        double sum = 0;
-        for(Country obj : countries){
-            sum = sum+ obj.getArea();
-        }
-        return sum/ countries.length;
-    }
+
 }
